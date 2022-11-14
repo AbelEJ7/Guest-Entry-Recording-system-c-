@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="federal1ModelStoreContainer" CdmEntityContainer="federal1Entities4">
+    <EntitySetMapping Name="car_recipents">
+      <EntityTypeMapping TypeName="federal1Model.car_recipents">
+        <MappingFragment StoreEntitySet="car_recipents">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="recipents_id" ColumnName="recipents_id" />
+          <ScalarProperty Name="car_id" ColumnName="car_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cars">
+      <EntityTypeMapping TypeName="federal1Model.car">
+        <MappingFragment StoreEntitySet="cars">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="licence_number" ColumnName="licence_number" />
+          <ScalarProperty Name="sub_city" ColumnName="sub_city" />
+          <ScalarProperty Name="car_type" ColumnName="car_type" />
+          <ScalarProperty Name="plate_number" ColumnName="plate_number" />
+          <ScalarProperty Name="dest_office" ColumnName="dest_office" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="failed_jobs">
+      <EntityTypeMapping TypeName="federal1Model.failed_jobs">
+        <MappingFragment StoreEntitySet="failed_jobs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+          <ScalarProperty Name="connection" ColumnName="connection" />
+          <ScalarProperty Name="queue" ColumnName="queue" />
+          <ScalarProperty Name="payload" ColumnName="payload" />
+          <ScalarProperty Name="exception" ColumnName="exception" />
+          <ScalarProperty Name="failed_at" ColumnName="failed_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guest_recipents">
+      <EntityTypeMapping TypeName="federal1Model.guest_recipents">
+        <MappingFragment StoreEntitySet="guest_recipents">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="recipents_id" ColumnName="recipents_id" />
+          <ScalarProperty Name="guest_id" ColumnName="guest_id" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guests">
+      <EntityTypeMapping TypeName="federal1Model.guest">
+        <MappingFragment StoreEntitySet="guests">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="id_number" ColumnName="id_number" />
+          <ScalarProperty Name="sub_city" ColumnName="sub_city" />
+          <ScalarProperty Name="woreda" ColumnName="woreda" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="dest_office" ColumnName="dest_office" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="isin" ColumnName="isin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gun_recipents">
+      <EntityTypeMapping TypeName="federal1Model.gun_recipents">
+        <MappingFragment StoreEntitySet="gun_recipents">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="recipents_id" ColumnName="recipents_id" />
+          <ScalarProperty Name="gun_id" ColumnName="gun_id" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guns">
+      <EntityTypeMapping TypeName="federal1Model.gun">
+        <MappingFragment StoreEntitySet="guns">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="cupon_number" ColumnName="cupon_number" />
+          <ScalarProperty Name="gun_type" ColumnName="gun_type" />
+          <ScalarProperty Name="side_number" ColumnName="side_number" />
+          <ScalarProperty Name="isTaken" ColumnName="isTaken" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="interns">
+      <EntityTypeMapping TypeName="federal1Model.intern">
+        <MappingFragment StoreEntitySet="interns">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="school" ColumnName="school" />
+          <ScalarProperty Name="supervisor" ColumnName="supervisor" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="School_id" ColumnName="School_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="migrations">
+      <EntityTypeMapping TypeName="federal1Model.migration">
+        <MappingFragment StoreEntitySet="migrations">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="migration1" ColumnName="migration" />
+          <ScalarProperty Name="batch" ColumnName="batch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personal_access_tokens">
+      <EntityTypeMapping TypeName="federal1Model.personal_access_tokens">
+        <MappingFragment StoreEntitySet="personal_access_tokens">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tokenable_type" ColumnName="tokenable_type" />
+          <ScalarProperty Name="tokenable_id" ColumnName="tokenable_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="abilities" ColumnName="abilities" />
+          <ScalarProperty Name="last_used_at" ColumnName="last_used_at" />
+          <ScalarProperty Name="expires_at" ColumnName="expires_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="recipents">
+      <EntityTypeMapping TypeName="federal1Model.recipent">
+        <MappingFragment StoreEntitySet="recipents">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="id_number" ColumnName="id_number" />
+          <ScalarProperty Name="job_position" ColumnName="job_position" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rrequests">
+      <EntityTypeMapping TypeName="federal1Model.rrequest">
+        <MappingFragment StoreEntitySet="rrequests">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="specificDate" ColumnName="specificDate" />
+          <ScalarProperty Name="from" ColumnName="from" />
+          <ScalarProperty Name="to" ColumnName="to" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="federal1Model.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="email_verified_at" ColumnName="email_verified_at" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photoo" ColumnName="photoo" />
+          <ScalarProperty Name="remember_token" ColumnName="remember_token" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="weekends">
+      <EntityTypeMapping TypeName="federal1Model.weekend">
+        <MappingFragment StoreEntitySet="weekends">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="isin" ColumnName="isin" />
+          <ScalarProperty Name="specificDate" ColumnName="specificDate" />
+          <ScalarProperty Name="from" ColumnName="from" />
+          <ScalarProperty Name="to" ColumnName="to" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="password_resets">
+      <EntityTypeMapping TypeName="federal1Model.password_resets">
+        <MappingFragment StoreEntitySet="password_resets">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

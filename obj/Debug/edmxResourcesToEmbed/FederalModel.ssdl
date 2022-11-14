@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="federal1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="car_recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="recipents_id" Type="int" Nullable="false" />
+    <Property Name="car_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cars">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="255" />
+    <Property Name="lname" Type="nvarchar" MaxLength="255" />
+    <Property Name="licence_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="sub_city" Type="nvarchar" MaxLength="255" />
+    <Property Name="car_type" Type="nvarchar" MaxLength="255" />
+    <Property Name="plate_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="dest_office" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="failed_jobs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uuid" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="connection" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="queue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="payload" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="exception" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="failed_at" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="guest_recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="recipents_id" Type="int" Nullable="false" />
+    <Property Name="guest_id" Type="int" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="guests">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="255" />
+    <Property Name="lname" Type="nvarchar" MaxLength="255" />
+    <Property Name="id_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="sub_city" Type="nvarchar" MaxLength="255" />
+    <Property Name="woreda" Type="nvarchar" MaxLength="255" />
+    <Property Name="phone_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="dest_office" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="gun_recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="recipents_id" Type="int" Nullable="false" />
+    <Property Name="gun_id" Type="int" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="guns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="255" />
+    <Property Name="lname" Type="nvarchar" MaxLength="255" />
+    <Property Name="cupon_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="gun_type" Type="nvarchar" MaxLength="255" />
+    <Property Name="side_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="interns">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="bigint" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="lname" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="role" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="school" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="supervisor" Type="nvarchar" MaxLength="255" />
+    <Property Name="photo" Type="nvarchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="phone" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="School_id" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="migrations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="migration" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="batch" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'federal1.dbo.password_resets' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="password_resets">
+    <Key>
+      <PropertyRef Name="email" />
+      <PropertyRef Name="token" />
+    </Key>
+    <Property Name="email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="token" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="personal_access_tokens">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tokenable_type" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="tokenable_id" Type="bigint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="token" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="abilities" Type="nvarchar(max)" />
+    <Property Name="last_used_at" Type="datetime" />
+    <Property Name="expires_at" Type="datetime" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="bigint" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="lname" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="id_number" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="job_position" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="email_verified_at" Type="datetime" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="remember_token" Type="nvarchar" MaxLength="100" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <EntityType Name="weekends">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="bigint" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="lname" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="id_number" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="job_position" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="assigned_date" Type="date" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+  </EntityType>
+  <Association Name="interns_user_id_foreign">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="interns" Type="Self.interns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="interns">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="recipents_user_id_foreign">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="recipents" Type="Self.recipents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="recipents">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="weekends_user_id_foreign">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="weekends" Type="Self.weekends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="weekends">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="federal1ModelStoreContainer">
+    <EntitySet Name="car_recipents" EntityType="Self.car_recipents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cars" EntityType="Self.cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="failed_jobs" EntityType="Self.failed_jobs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="guest_recipents" EntityType="Self.guest_recipents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="guests" EntityType="Self.guests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="gun_recipents" EntityType="Self.gun_recipents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="guns" EntityType="Self.guns" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="interns" EntityType="Self.interns" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="migrations" EntityType="Self.migrations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="personal_access_tokens" EntityType="Self.personal_access_tokens" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="recipents" EntityType="Self.recipents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="weekends" EntityType="Self.weekends" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="password_resets" EntityType="Self.password_resets" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [password_resets].[email] AS [email], 
+    [password_resets].[token] AS [token], 
+    [password_resets].[created_at] AS [created_at]
+    FROM [dbo].[password_resets] AS [password_resets]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="interns_user_id_foreign" Association="Self.interns_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="interns" EntitySet="interns" />
+    </AssociationSet>
+    <AssociationSet Name="recipents_user_id_foreign" Association="Self.recipents_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="recipents" EntitySet="recipents" />
+    </AssociationSet>
+    <AssociationSet Name="weekends_user_id_foreign" Association="Self.weekends_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="weekends" EntitySet="weekends" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

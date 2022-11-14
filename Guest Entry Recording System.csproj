@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1402EA2A-11E1-4EEB-A85C-5B7D2BDBA660}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Guest_Entry_Recording_System</RootNamespace>
+    <AssemblyName>Guest Entry Recording System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app1.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Downloads\Telegram Desktop\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Downloads\Telegram Desktop\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>..\..\..\Downloads\Telegram Desktop\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\..\..\Downloads\Telegram Desktop\Stadium Ticket management  system\Stadium Ticket management  system\bin\Debug\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car Recipient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car Recipient.Designer.cs">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="car.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="car_recipents.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DashExitUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashExitUc.Designer.cs">
+      <DependentUpon>DashExitUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashPedsUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashPedsUc.Designer.cs">
+      <DependentUpon>DashPedsUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exit Gate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exit Gate.Designer.cs">
+      <DependentUpon>Exit Gate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="failed_jobs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="guest.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GuestsCarUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GuestsCarUc.Designer.cs">
+      <DependentUpon>GuestsCarUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestsPedUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GuestsPedUc.Designer.cs">
+      <DependentUpon>GuestsPedUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guest_recipents.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gun.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gun_recipents.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfoUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoUc.Designer.cs">
+      <DependentUpon>InfoUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intern.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Internsid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internsid.Designer.cs">
+      <DependentUpon>Internsid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAs.Designer.cs">
+      <DependentUpon>LoginAs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageOnCars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageOnCars.Designer.cs">
+      <DependentUpon>MessageOnCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="migration.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="password_resets.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pedestrian Recipient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedestrian Recipient.Designer.cs">
+      <DependentUpon>Pedestrian Recipient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashCarUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashCarUc.Designer.cs">
+      <DependentUpon>DashCarUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personal_access_tokens.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recipent.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rrequest.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsUcCars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsUcCars.Designer.cs">
+      <DependentUpon>SettingsUcCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsUcPeds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsUcPeds.Designer.cs">
+      <DependentUpon>SettingsUcPeds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="weekend.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Car Recipient.am-ET.resx">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car Recipient.am.resx">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car Recipient.en-AI.resx">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car Recipient.en-AS.resx">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car Recipient.en.resx">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car Recipient.resx">
+      <DependentUpon>Car Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashCarUc.am.resx">
+      <DependentUpon>DashCarUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashExitUc.am.resx">
+      <DependentUpon>DashExitUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashExitUc.resx">
+      <DependentUpon>DashExitUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashPedsUc.am.resx">
+      <DependentUpon>DashPedsUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashPedsUc.resx">
+      <DependentUpon>DashPedsUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit Gate.am.resx">
+      <DependentUpon>Exit Gate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit Gate.resx">
+      <DependentUpon>Exit Gate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestsCarUc.ak-GH.resx">
+      <DependentUpon>GuestsCarUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestsCarUc.am.resx">
+      <DependentUpon>GuestsCarUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestsCarUc.resx">
+      <DependentUpon>GuestsCarUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestsCarUc.sq.resx">
+      <DependentUpon>GuestsCarUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestsPedUc.am.resx">
+      <DependentUpon>GuestsPedUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestsPedUc.resx">
+      <DependentUpon>GuestsPedUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoUc.resx">
+      <DependentUpon>InfoUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internsid.am.resx">
+      <DependentUpon>Internsid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internsid.resx">
+      <DependentUpon>Internsid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAs.am-ET.resx">
+      <DependentUpon>LoginAs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAs.am.resx">
+      <DependentUpon>LoginAs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAs.resx">
+      <DependentUpon>LoginAs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageOnCars.resx">
+      <DependentUpon>MessageOnCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedestrian Recipient.am.resx">
+      <DependentUpon>Pedestrian Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedestrian Recipient.resx">
+      <DependentUpon>Pedestrian Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashCarUc.resx">
+      <DependentUpon>DashCarUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingsUcCars.am.resx">
+      <DependentUpon>SettingsUcCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsUcCars.resx">
+      <DependentUpon>SettingsUcCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsUcPeds.am.resx">
+      <DependentUpon>SettingsUcPeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsUcPeds.resx">
+      <DependentUpon>SettingsUcPeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="app1.manifest" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedestrian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Username.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedestrian1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotatingLogo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Language_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkmode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightMode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dash1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interns1.png" />
+    <None Include="Resources\Interns.png" />
+    <None Include="Resources\Exit.jpg" />
+    <None Include="Resources\Daily2.png" />
+    <None Include="Resources\Daily1.png" />
+    <None Include="Resources\Weekly1.png" />
+    <None Include="Resources\Monthly.png" />
+    <None Include="Resources\Daily.png" />
+    <None Include="Resources\Annual.png" />
+    <None Include="Resources\Weekly.png" />
+    <None Include="Resources\Intern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ped.png" />
+    <None Include="Resources\carr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

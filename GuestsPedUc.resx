@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GuestTc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="cboDevice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cboDevice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="cboDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 297</value>
+  </data>
+  <data name="cboDevice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="cboDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cboDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;cboDevice.Name" xml:space="preserve">
+    <value>cboDevice</value>
+  </data>
+  <data name="&gt;&gt;cboDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboDevice.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;cboDevice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CameraLb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="CameraLb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CameraLb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 11.25pt, style=Bold</value>
+  </data>
+  <data name="CameraLb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CameraLb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 297</value>
+  </data>
+  <data name="CameraLb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="CameraLb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="CameraLb.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="CameraLb.Text" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="&gt;&gt;CameraLb.Name" xml:space="preserve">
+    <value>CameraLb</value>
+  </data>
+  <data name="&gt;&gt;CameraLb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CameraLb.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;CameraLb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="StartBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="StartBtn.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
+        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
+        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
+        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
+        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
+        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
+        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
+        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
+        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="StartBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="StartBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 372</value>
+  </data>
+  <data name="StartBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 28</value>
+  </data>
+  <data name="StartBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>162</value>
+  </data>
+  <data name="StartBtn.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;StartBtn.Name" xml:space="preserve">
+    <value>StartBtn</value>
+  </data>
+  <data name="&gt;&gt;StartBtn.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;StartBtn.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;StartBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="QrScannerPb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="QrScannerPb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="QrScannerPb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 320</value>
+  </data>
+  <data name="QrScannerPb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="QrScannerPb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 185</value>
+  </data>
+  <data name="QrScannerPb.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="QrScannerPb.TabIndex" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="&gt;&gt;QrScannerPb.Name" xml:space="preserve">
+    <value>QrScannerPb</value>
+  </data>
+  <data name="&gt;&gt;QrScannerPb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QrScannerPb.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;QrScannerPb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="StopBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="StopBtn.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
+        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
+        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
+        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
+        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
+        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
+        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
+        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
+        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="StopBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="StopBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 416</value>
+  </data>
+  <data name="StopBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 28</value>
+  </data>
+  <data name="StopBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="StopBtn.Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="&gt;&gt;StopBtn.Name" xml:space="preserve">
+    <value>StopBtn</value>
+  </data>
+  <data name="&gt;&gt;StopBtn.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;StopBtn.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;StopBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gunaCirclePictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gunaCirclePictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 9</value>
+  </data>
+  <data name="gunaCirclePictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="gunaCirclePictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="gunaCirclePictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="gunaCirclePictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>157</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox2.Name" xml:space="preserve">
+    <value>gunaCirclePictureBox2</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCirclePictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox2.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TbGuestInfoSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TbGuestInfoSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TbGuestInfoSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 9</value>
+  </data>
+  <data name="TbGuestInfoSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TbGuestInfoSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 27</value>
+  </data>
+  <data name="TbGuestInfoSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="&gt;&gt;TbGuestInfoSearch.Name" xml:space="preserve">
+    <value>TbGuestInfoSearch</value>
+  </data>
+  <data name="&gt;&gt;TbGuestInfoSearch.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TbGuestInfoSearch.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;TbGuestInfoSearch.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gvGuest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="gvGuest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 43</value>
+  </data>
+  <data name="gvGuest.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="gvGuest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 264</value>
+  </data>
+  <data name="gvGuest.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;gvGuest.Name" xml:space="preserve">
+    <value>gvGuest</value>
+  </data>
+  <data name="&gt;&gt;gvGuest.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gvGuest.Parent" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;gvGuest.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GuestInfoTp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="GuestInfoTp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GuestInfoTp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GuestInfoTp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 508</value>
+  </data>
+  <data name="GuestInfoTp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GuestInfoTp.Text" xml:space="preserve">
+    <value>Guest Information</value>
+  </data>
+  <data name="&gt;&gt;GuestInfoTp.Name" xml:space="preserve">
+    <value>GuestInfoTp</value>
+  </data>
+  <data name="&gt;&gt;GuestInfoTp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GuestInfoTp.Parent" xml:space="preserve">
+    <value>GuestTc</value>
+  </data>
+  <data name="&gt;&gt;GuestInfoTp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GunInfoTlp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="GunInfoTlp.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="GonLb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="GonLb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GonLb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 10pt, style=Bold</value>
+  </data>
+  <data name="GonLb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 4</value>
+  </data>
+  <data name="GonLb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="GonLb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 38</value>
+  </data>
+  <data name="GonLb.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="GonLb.Text" xml:space="preserve">
+    <value>Gun Owners Name :</value>
+  </data>
+  <data name="&gt;&gt;GonLb.Name" xml:space="preserve">
+    <value>GonLb</value>
+  </data>
+  <data name="&gt;&gt;GonLb.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;GonLb.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;GonLb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbSideNumber.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="tbSideNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 11.25pt</value>
+  </data>
+  <data name="tbSideNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 69</value>
+  </data>
+  <data name="tbSideNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 28</value>
+  </data>
+  <data name="tbSideNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="&gt;&gt;tbSideNumber.Name" xml:space="preserve">
+    <value>tbSideNumber</value>
+  </data>
+  <data name="&gt;&gt;tbSideNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSideNumber.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;tbSideNumber.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CoupLb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="CoupLb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CoupLb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 10pt, style=Bold</value>
+  </data>
+  <data name="CoupLb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 81</value>
+  </data>
+  <data name="CoupLb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="CoupLb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 19</value>
+  </data>
+  <data name="CoupLb.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="CoupLb.Text" xml:space="preserve">
+    <value>Coupon Number :</value>
+  </data>
+  <data name="&gt;&gt;CoupLb.Name" xml:space="preserve">
+    <value>CoupLb</value>
+  </data>
+  <data name="&gt;&gt;CoupLb.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;CoupLb.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;CoupLb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SideNLb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="SideNLb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SideNLb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 10pt, style=Bold</value>
+  </data>
+  <data name="SideNLb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 81</value>
+  </data>
+  <data name="SideNLb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="SideNLb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 19</value>
+  </data>
+  <data name="SideNLb.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="SideNLb.Text" xml:space="preserve">
+    <value>Side Number :</value>
+  </data>
+  <data name="&gt;&gt;SideNLb.Name" xml:space="preserve">
+    <value>SideNLb</value>
+  </data>
+  <data name="&gt;&gt;SideNLb.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;SideNLb.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;SideNLb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TogLb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="TogLb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TogLb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 10pt, style=Bold</value>
+  </data>
+  <data name="TogLb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 23</value>
+  </data>
+  <data name="TogLb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="TogLb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 19</value>
+  </data>
+  <data name="TogLb.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="TogLb.Text" xml:space="preserve">
+    <value>Type of Gun :</value>
+  </data>
+  <data name="&gt;&gt;TogLb.Name" xml:space="preserve">
+    <value>TogLb</value>
+  </data>
+  <data name="&gt;&gt;TogLb.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;TogLb.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;TogLb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbTypeOfGun.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="tbTypeOfGun.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 11.25pt</value>
+  </data>
+  <data name="tbTypeOfGun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 11</value>
+  </data>
+  <data name="tbTypeOfGun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 28</value>
+  </data>
+  <data name="tbTypeOfGun.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;tbTypeOfGun.Name" xml:space="preserve">
+    <value>tbTypeOfGun</value>
+  </data>
+  <data name="&gt;&gt;tbTypeOfGun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbTypeOfGun.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;tbTypeOfGun.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbCouponNumber.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="tbCouponNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 11.25pt</value>
+  </data>
+  <data name="tbCouponNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 69</value>
+  </data>
+  <data name="tbCouponNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 28</value>
+  </data>
+  <data name="tbCouponNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="&gt;&gt;tbCouponNumber.Name" xml:space="preserve">
+    <value>tbCouponNumber</value>
+  </data>
+  <data name="&gt;&gt;tbCouponNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbCouponNumber.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;tbCouponNumber.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tbGunOwner.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="tbGunOwner.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 11.25pt</value>
+  </data>
+  <data name="tbGunOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 11</value>
+  </data>
+  <data name="tbGunOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 28</value>
+  </data>
+  <data name="tbGunOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="&gt;&gt;tbGunOwner.Name" xml:space="preserve">
+    <value>tbGunOwner</value>
+  </data>
+  <data name="&gt;&gt;tbGunOwner.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbGunOwner.Parent" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;tbGunOwner.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GunInfoTlp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 317</value>
+  </data>
+  <data name="GunInfoTlp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GunInfoTlp.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GunInfoTlp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 100</value>
+  </data>
+  <data name="GunInfoTlp.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTlp.Name" xml:space="preserve">
+    <value>GunInfoTlp</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTlp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTlp.Parent" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTlp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GunInfoTlp.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="GonLb" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tbSideNumber" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="CoupLb" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="SideNLb" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TogLb" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tbTypeOfGun" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="tbCouponNumber" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tbGunOwner" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16.52174,Percent,31.46592,Percent,21.94211,Percent,30" /&gt;&lt;Rows Styles="Percent,42.27642,Percent,57.72358" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="TbGunSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TbGunSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TbGunSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 9</value>
+  </data>
+  <data name="TbGunSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TbGunSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 27</value>
+  </data>
+  <data name="TbGunSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="&gt;&gt;TbGunSearch.Name" xml:space="preserve">
+    <value>TbGunSearch</value>
+  </data>
+  <data name="&gt;&gt;TbGunSearch.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TbGunSearch.Parent" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;TbGunSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gvGun.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="gvGun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 43</value>
+  </data>
+  <data name="gvGun.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="gvGun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 264</value>
+  </data>
+  <data name="gvGun.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;gvGun.Name" xml:space="preserve">
+    <value>gvGun</value>
+  </data>
+  <data name="&gt;&gt;gvGun.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gvGun.Parent" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;gvGun.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gunaCirclePictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gunaCirclePictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 9</value>
+  </data>
+  <data name="gunaCirclePictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="gunaCirclePictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="gunaCirclePictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="gunaCirclePictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox1.Name" xml:space="preserve">
+    <value>gunaCirclePictureBox1</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCirclePictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox1.Parent" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ClearBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ClearBtn2.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
+        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
+        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
+        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
+        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
+        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
+        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
+        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
+        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ClearBtn2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="ClearBtn2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 442</value>
+  </data>
+  <data name="ClearBtn2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 37</value>
+  </data>
+  <data name="ClearBtn2.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="ClearBtn2.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;ClearBtn2.Name" xml:space="preserve">
+    <value>ClearBtn2</value>
+  </data>
+  <data name="&gt;&gt;ClearBtn2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;ClearBtn2.Parent" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;ClearBtn2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btInsertGun.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btInsertGun.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
+        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
+        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
+        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
+        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
+        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
+        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
+        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
+        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btInsertGun.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btInsertGun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 442</value>
+  </data>
+  <data name="btInsertGun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 37</value>
+  </data>
+  <data name="btInsertGun.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="btInsertGun.Text" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="&gt;&gt;btInsertGun.Name" xml:space="preserve">
+    <value>btInsertGun</value>
+  </data>
+  <data name="&gt;&gt;btInsertGun.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;btInsertGun.Parent" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;btInsertGun.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="GunInfoTp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="GunInfoTp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GunInfoTp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 508</value>
+  </data>
+  <data name="GunInfoTp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="GunInfoTp.Text" xml:space="preserve">
+    <value>Gun Information</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTp.Name" xml:space="preserve">
+    <value>GunInfoTp</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTp.Parent" xml:space="preserve">
+    <value>GuestTc</value>
+  </data>
+  <data name="&gt;&gt;GunInfoTp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gunaCirclePictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gunaCirclePictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 9</value>
+  </data>
+  <data name="gunaCirclePictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="gunaCirclePictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="gunaCirclePictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="gunaCirclePictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox3.Name" xml:space="preserve">
+    <value>gunaCirclePictureBox3</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCirclePictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox3.Parent" xml:space="preserve">
+    <value>InternsTp</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TbInternsSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TbInternsSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TbInternsSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 9</value>
+  </data>
+  <data name="TbInternsSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TbInternsSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 27</value>
+  </data>
+  <data name="TbInternsSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>151</value>
+  </data>
+  <data name="&gt;&gt;TbInternsSearch.Name" xml:space="preserve">
+    <value>TbInternsSearch</value>
+  </data>
+  <data name="&gt;&gt;TbInternsSearch.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TbInternsSearch.Parent" xml:space="preserve">
+    <value>InternsTp</value>
+  </data>
+  <data name="&gt;&gt;TbInternsSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gvIntern.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="gvIntern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 43</value>
+  </data>
+  <data name="gvIntern.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="gvIntern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 244</value>
+  </data>
+  <data name="gvIntern.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;gvIntern.Name" xml:space="preserve">
+    <value>gvIntern</value>
+  </data>
+  <data name="&gt;&gt;gvIntern.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gvIntern.Parent" xml:space="preserve">
+    <value>InternsTp</value>
+  </data>
+  <data name="&gt;&gt;gvIntern.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="InternsTp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="InternsTp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="InternsTp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 508</value>
+  </data>
+  <data name="InternsTp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="InternsTp.Text" xml:space="preserve">
+    <value>Interns</value>
+  </data>
+  <data name="&gt;&gt;InternsTp.Name" xml:space="preserve">
+    <value>InternsTp</value>
+  </data>
+  <data name="&gt;&gt;InternsTp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InternsTp.Parent" xml:space="preserve">
+    <value>GuestTc</value>
+  </data>
+  <data name="&gt;&gt;InternsTp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TbWeekendSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TbWeekendSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TbWeekendSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 9</value>
+  </data>
+  <data name="TbWeekendSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TbWeekendSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 27</value>
+  </data>
+  <data name="TbWeekendSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;TbWeekendSearch.Name" xml:space="preserve">
+    <value>TbWeekendSearch</value>
+  </data>
+  <data name="&gt;&gt;TbWeekendSearch.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TbWeekendSearch.Parent" xml:space="preserve">
+    <value>WETp</value>
+  </data>
+  <data name="&gt;&gt;TbWeekendSearch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gvWeekend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="gvWeekend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 43</value>
+  </data>
+  <data name="gvWeekend.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="gvWeekend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 244</value>
+  </data>
+  <data name="gvWeekend.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;gvWeekend.Name" xml:space="preserve">
+    <value>gvWeekend</value>
+  </data>
+  <data name="&gt;&gt;gvWeekend.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCustomDataGrid, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gvWeekend.Parent" xml:space="preserve">
+    <value>WETp</value>
+  </data>
+  <data name="&gt;&gt;gvWeekend.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gunaCirclePictureBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gunaCirclePictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 9</value>
+  </data>
+  <data name="gunaCirclePictureBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="gunaCirclePictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="gunaCirclePictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="gunaCirclePictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox4.Name" xml:space="preserve">
+    <value>gunaCirclePictureBox4</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCirclePictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox4.Parent" xml:space="preserve">
+    <value>WETp</value>
+  </data>
+  <data name="&gt;&gt;gunaCirclePictureBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="WETp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="WETp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="WETp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="WETp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 508</value>
+  </data>
+  <data name="WETp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="WETp.Text" xml:space="preserve">
+    <value>Weekend Entry</value>
+  </data>
+  <data name="&gt;&gt;WETp.Name" xml:space="preserve">
+    <value>WETp</value>
+  </data>
+  <data name="&gt;&gt;WETp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WETp.Parent" xml:space="preserve">
+    <value>GuestTc</value>
+  </data>
+  <data name="&gt;&gt;WETp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="GuestTc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="GuestTc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 2</value>
+  </data>
+  <data name="GuestTc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GuestTc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>830, 541</value>
+  </data>
+  <data name="GuestTc.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GuestTc.Name" xml:space="preserve">
+    <value>GuestTc</value>
+  </data>
+  <data name="&gt;&gt;GuestTc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GuestTc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GuestTc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="timUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>219, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>44</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>820, 536</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timUpdate.Name" xml:space="preserve">
+    <value>timUpdate</value>
+  </data>
+  <data name="&gt;&gt;timUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GuestsPedUc</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

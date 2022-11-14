@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="federal1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="car_recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="recipents_id" Type="Int32" Nullable="false" />
+    <Property Name="car_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="car">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="licence_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="sub_city" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="car_type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="plate_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="dest_office" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="failed_jobs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uuid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="connection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="queue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="payload" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="exception" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="failed_at" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="guest_recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="recipents_id" Type="Int32" Nullable="false" />
+    <Property Name="guest_id" Type="Int32" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="guest">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="id_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="sub_city" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="woreda" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="dest_office" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <Property Name="isin" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="gun_recipents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="recipents_id" Type="Int32" Nullable="false" />
+    <Property Name="gun_id" Type="Int32" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gun">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cupon_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="gun_type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="side_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isTaken" Type="Boolean" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="intern">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int64" Nullable="false" />
+    <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="school" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="supervisor" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="photo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <Property Name="phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="School_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.interns_user_id_foreign" FromRole="interns" ToRole="users" />
+  </EntityType>
+  <EntityType Name="migration">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="migration1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="batch" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="personal_access_tokens">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tokenable_type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tokenable_id" Type="Int64" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="token" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="abilities" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="last_used_at" Type="DateTime" Precision="3" />
+    <Property Name="expires_at" Type="DateTime" Precision="3" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="recipent">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int64" Nullable="false" />
+    <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="id_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="job_position" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="user" Relationship="Self.recipents_user_id_foreign" FromRole="recipents" ToRole="users" />
+  </EntityType>
+  <EntityType Name="rrequest">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int64" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="specificDate" Type="DateTime" Precision="0" />
+    <Property Name="from" Type="DateTime" Precision="0" />
+    <Property Name="to" Type="DateTime" Precision="0" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="user" Relationship="Self.rrequests_user_id_foreign" FromRole="rrequests" ToRole="users" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="emp_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email_verified_at" Type="DateTime" Precision="3" />
+    <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone_number" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="role_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="photo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="photoo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="remember_token" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="interns" Relationship="Self.interns_user_id_foreign" FromRole="users" ToRole="interns" />
+    <NavigationProperty Name="recipents" Relationship="Self.recipents_user_id_foreign" FromRole="users" ToRole="recipents" />
+    <NavigationProperty Name="rrequests" Relationship="Self.rrequests_user_id_foreign" FromRole="users" ToRole="rrequests" />
+    <NavigationProperty Name="weekends" Relationship="Self.weekends_user_id_foreign" FromRole="users" ToRole="weekends" />
+  </EntityType>
+  <EntityType Name="weekend">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int64" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="specificDate" Type="DateTime" Precision="0" />
+    <Property Name="from" Type="DateTime" Precision="0" />
+    <Property Name="to" Type="DateTime" Precision="0" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="user" Relationship="Self.weekends_user_id_foreign" FromRole="weekends" ToRole="users" />
+  </EntityType>
+  <EntityType Name="password_resets">
+    <Key>
+      <PropertyRef Name="email" />
+      <PropertyRef Name="token" />
+    </Key>
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="token" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="interns_user_id_foreign">
+    <End Role="users" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="interns" Type="Self.intern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="interns">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="recipents_user_id_foreign">
+    <End Role="users" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="recipents" Type="Self.recipent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="recipents">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rrequests_user_id_foreign">
+    <End Role="users" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="rrequests" Type="Self.rrequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rrequests">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="weekends_user_id_foreign">
+    <End Role="users" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="weekends" Type="Self.weekend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="weekends">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="federal1Entities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="car_recipents" EntityType="Self.car_recipents" />
+    <EntitySet Name="cars" EntityType="Self.car" />
+    <EntitySet Name="failed_jobs" EntityType="Self.failed_jobs" />
+    <EntitySet Name="guest_recipents" EntityType="Self.guest_recipents" />
+    <EntitySet Name="guests" EntityType="Self.guest" />
+    <EntitySet Name="gun_recipents" EntityType="Self.gun_recipents" />
+    <EntitySet Name="guns" EntityType="Self.gun" />
+    <EntitySet Name="interns" EntityType="Self.intern" />
+    <EntitySet Name="migrations" EntityType="Self.migration" />
+    <EntitySet Name="personal_access_tokens" EntityType="Self.personal_access_tokens" />
+    <EntitySet Name="recipents" EntityType="Self.recipent" />
+    <EntitySet Name="rrequests" EntityType="Self.rrequest" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="weekends" EntityType="Self.weekend" />
+    <EntitySet Name="password_resets" EntityType="Self.password_resets" />
+    <AssociationSet Name="interns_user_id_foreign" Association="Self.interns_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="interns" EntitySet="interns" />
+    </AssociationSet>
+    <AssociationSet Name="recipents_user_id_foreign" Association="Self.recipents_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="recipents" EntitySet="recipents" />
+    </AssociationSet>
+    <AssociationSet Name="rrequests_user_id_foreign" Association="Self.rrequests_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="rrequests" EntitySet="rrequests" />
+    </AssociationSet>
+    <AssociationSet Name="weekends_user_id_foreign" Association="Self.weekends_user_id_foreign">
+      <End Role="users" EntitySet="users" />
+      <End Role="weekends" EntitySet="weekends" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
